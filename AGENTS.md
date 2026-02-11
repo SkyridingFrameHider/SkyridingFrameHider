@@ -150,9 +150,9 @@ The `.toc` file uses `@project-version@` which is replaced at build time by BigW
 
 | Command | Description |
 |---|---|
-| `/sfh` | Show help |
-| `/sfh add <frame>` | Add a frame to hide list |
-| `/sfh remove <frame>` | Remove a frame from hide list |
+| `/sfh` or `/skyridingframehider` | Show help |
+| `/sfh add <frame>` | Add a frame to tracked list |
+| `/sfh remove <frame>` | Remove a frame from tracked list |
 | `/sfh list` | List tracked frames |
 | `/sfh mode [skyriding\|flying\|mounted]` | Get/set hide mode |
 
@@ -166,6 +166,10 @@ SkyridingFrameHiderDB = {
     mode = "skyriding",    -- "skyriding" | "flying" | "mounted"
 }
 ```
+
+Initialization behavior:
+- If `SkyridingFrameHiderDB` does not exist, it is created once as a full copy of defaults.
+- If it already exists, it is used as-is (no per-key default backfill or migration).
 
 ## Development Notes
 

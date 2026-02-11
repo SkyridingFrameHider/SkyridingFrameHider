@@ -6,7 +6,7 @@ A World of Warcraft addon that lets you hide any frame while skyriding, flying, 
 
 | Command | Description |
 |---|---|
-| `/sfh` | Show help with all available commands |
+| `/sfh` or `/skyridingframehider` | Show help with all available commands |
 | `/sfh add <framename>` | Add a frame to the hide list |
 | `/sfh remove <framename>` | Remove a frame from the hide list |
 | `/sfh list` | List all tracked frames |
